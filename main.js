@@ -15,10 +15,6 @@ const images = document.querySelectorAll("img");
       })
     }
   );
-
-
-
-
 /*
 CHALLENGE 2:
 Sayfa aktifken (herhangi bir yere tıklandığında), klavye dinlemeye başlasın.
@@ -27,7 +23,21 @@ Sayfa aktifken (herhangi bir yere tıklandığında), klavye dinlemeye başlası
 - "Escape" (Esc) tuşuna basılırsa body'deki tüm bu class'lar kaldırılsın
 NOT: Klavye eventlerini document yerine **window** nesnesine ekleyin.
 */
-
+window.addEventListener("keyup",(event) => {
+console.log(event);
+  if(event.key === "1"){
+    document.body.classList.remove("theme2","theme3");
+    document.body.classList.add("theme1");
+  }else if(event.key === "2"){
+    document.body.classList.remove("theme1","theme3");
+    document.body.classList.add("theme2");
+  }else if(event.key === "3"){
+    document.body.classList.remove("theme2","theme1");
+    document.body.classList.add("theme3");
+  }else if(event.key === "Escape"){
+    document.body.classList.remove("theme1","theme2","theme3");
+  }
+})
 /*
 CHALLENGE 3:
 <input id="full_name"> alanına yazı yazıldıkça:
