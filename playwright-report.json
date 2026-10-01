@@ -1,21 +1,21 @@
 {
   "stats": {
-    "expected": 9,
-    "unexpected": 2,
+    "expected": 12,
+    "unexpected": 0,
     "skipped": 0,
     "flaky": 0,
-    "duration": 4266
+    "duration": 1870
   },
   "tests": [
     {
       "title": "img hover edildiğinde grayscale class eklenmeli",
       "status": "passed",
-      "duration": 444
+      "duration": 445
     },
     {
       "title": "img mouseleave olunca grayscale class silinmeli",
       "status": "passed",
-      "duration": 185
+      "duration": 166
     },
     {
       "title": "1 tuşuna basıldığında body class theme1 olmalı",
@@ -25,47 +25,47 @@
     {
       "title": "2 tuşuna basıldığında body class theme2 olmalı",
       "status": "passed",
-      "duration": 112
+      "duration": 127
     },
     {
       "title": "3 tuşuna basıldığında body class theme3 olmalı",
       "status": "passed",
-      "duration": 111
+      "duration": 113
     },
     {
       "title": "Escape tuşuna basıldığında tüm theme classları kaldırılmalı",
       "status": "passed",
-      "duration": 114
+      "duration": 112
     },
     {
       "title": "Inputa yazılan metin büyük harfe dönüşmeli",
       "status": "passed",
-      "duration": 115
+      "duration": 113
     },
     {
       "title": "5 karakterden küçükken buton disabled olmalı",
       "status": "passed",
-      "duration": 111
+      "duration": 115
     },
     {
       "title": "5 karakter ve üzeri yazıldığında buton enabled olmalı",
       "status": "passed",
-      "duration": 121
+      "duration": 118
     },
     {
       "title": "Submit edildiğinde paragraf güncellenmeli",
-      "status": "failed",
-      "duration": 268
+      "status": "passed",
+      "duration": 158
     },
     {
       "title": "Submit sonrası input alanı sıfırlanmalı",
-      "status": "failed",
-      "duration": 555
+      "status": "passed",
+      "duration": 148
     },
     {
       "title": "Submit sonrası buton disabled olmalı",
-      "status": "timedOut",
-      "duration": 2017
+      "status": "passed",
+      "duration": 142
     }
   ]
 }
