@@ -4,6 +4,20 @@ Tüm <img> etiketlerine mouseenter ve mouseleave eventleri ekleyin.
 - Mouse üzerine geldiğinde (mouseenter): ilgili resme "grayscale" class'ı ekleyin.
 - Mouse çıktığında (mouseleave): "grayscale" class'ını kaldırın.
 */
+const images = document.querySelectorAll("img");
+
+  images.forEach((gray) => {
+      gray.addEventListener("mouseenter", () => {
+        gray.classList.add("grayscale");
+      })
+      gray.addEventListener("mouseleave", () =>{
+        gray.classList.remove("grayscale");
+      })
+    }
+  );
+
+
+
 
 /*
 CHALLENGE 2:
