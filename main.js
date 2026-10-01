@@ -45,7 +45,15 @@ CHALLENGE 3:
 - Metin 5 karakterden UZUNSA <button> elementini "enabled" yapın
 - Aksi halde (5 veya daha az karakter) buton "disabled" olmalı
 */
-
+const yorumYazisi = document.getElementById("full_name");
+yorumYazisi.addEventListener("input",(event) => {
+  if(event.target.value.length < 5){
+    document.querySelector("button").disabled = true;
+  }else{
+    document.querySelector("button").disabled = false;
+  }
+  event.target.value = event.target.value.toUpperCase();
+})
 /*
 CHALLENGE 4:
 Form submit edildiğinde (Kaydet butonuna basıldığında):
